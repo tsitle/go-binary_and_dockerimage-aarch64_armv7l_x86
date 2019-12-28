@@ -57,6 +57,15 @@ function _getCpuArch() {
 		x86_64*)
 			echo -n "amd64"
 			;;
+		i686*)
+			if [ "$1" = "qemu" ]; then
+				echo -n "i386"
+			elif [ "$1" = "s6_overlay" -o "$1" = "alpine_dist" ]; then
+				echo -n "x86"
+			else
+				echo -n "i386"
+			fi
+			;;
 		aarch64*)
 			if [ "$1" = "debian_rootfs" ]; then
 				echo -n "arm64v8"
