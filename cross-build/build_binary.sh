@@ -165,8 +165,6 @@ LVAR_IMAGE_PRE_NAME="go-builder-cross-prestage-${LVAR_DEBIAN_DIST}"
 LVAR_IMAGE_FIN_NAME="go-${OPT_DEBIAN_TRG_DIST}-builder-cross-${LVAR_DEBIAN_DIST}"
 LVAR_IMAGE_VER="1.13.5"
 
-LVAR_IMAGE_UBUNTU_VER="18.04"
-
 cd build-ctx1 || exit 1
 
 [ ! -d cache ] && {
