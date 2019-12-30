@@ -182,7 +182,7 @@ cd build-ctx1 || exit 1
 
 _getCommonFile "debian_stretch/rootfs-debian_stretch_${LVAR_DEBIAN_VERSION}-${LVAR_DEBIAN_RFS}.tar.xz" || exit 1
 
-echo -e "$VAR_MYNAME: Building Docker Image '${LVAR_IMAGE_PRE_NAME}:${LVAR_IMAGE_VER}'...\n"
+echo -e "\n$VAR_MYNAME: Building Docker Image '${LVAR_IMAGE_PRE_NAME}:${LVAR_IMAGE_VER}'...\n"
 docker build \
 		--build-arg CF_CPUARCH_DEB_ROOTFS="$LVAR_DEBIAN_RFS" \
 		--build-arg CF_DEBIAN_VERSION="$LVAR_DEBIAN_VERSION" \
@@ -192,7 +192,7 @@ docker build \
 
 cd ../build-ctx2 || exit 1
 
-echo -e "$VAR_MYNAME: Building Docker Image '${LVAR_IMAGE_FIN_NAME}:${LVAR_IMAGE_VER}'...\n"
+echo -e "\n$VAR_MYNAME: Building Docker Image '${LVAR_IMAGE_FIN_NAME}:${LVAR_IMAGE_VER}'...\n"
 docker build \
 		--build-arg CF_GOLANG_VER="$LVAR_IMAGE_VER" \
 		--build-arg CF_GOLANG_TRG_ARCH="$LVAR_GOLANG_TRG_ARCH" \

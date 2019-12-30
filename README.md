@@ -20,7 +20,7 @@ $ sudo apt-get install p7zip
 Now extract the binary package:
 
 ```
-$ sudo 7zr x -so "binary/go<VERSION>.linux-<ARCH>.tar.7z.001" | tar xf - -C /usr/local/
+$ 7zr x -so "binary/go<VERSION>.linux-<ARCH>.tar.7z.001" | sudo tar xf - -C /usr/local/
 $ sudo ln -s /usr/local/go/bin/go /usr/local/bin/
 $ sudo ln -s /usr/local/go/bin/gofmt /usr/local/bin/
 ```
