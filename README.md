@@ -69,4 +69,4 @@ Now you're ready to compile your **go** application under `~/mygoapp/`.
 The Docker Image is based on:
 
 - [https://gist.github.com/conoro/4fca191fad018b6e47922a21fab499ca](https://gist.github.com/conoro/4fca191fad018b6e47922a21fab499ca)
-- [https://github.com/tsitle/dockercompose-binary\_and\_dockerimage-aarch64](https://github.com/tsitle/dockercompose-binary_and_dockerimage-aarch64)
+- [https://github.com/tsitle/dockercompose-binary\_and\_dockerimage-aarch64\_armv7l\_x86\_x64](https://github.com/tsitle/dockercompose-binary_and_dockerimage-aarch64_armv7l_x86_x64)
