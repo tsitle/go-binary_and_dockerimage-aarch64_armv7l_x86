@@ -45,4 +45,4 @@ RUN \
 	&& git clone https://go.googlesource.com/go
 
 #
-ENV DEBIAN_FRONTEND=newt
+ENV DEBIAN_FRONTEND=dialog
