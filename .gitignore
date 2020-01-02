@@ -1,5 +1,4 @@
-cross-build/build-ctx1/cache/
-cross-build/build-ctx2/cache/
+cross-build/build-ctx/cache/
 cross-build/dist/
 
 
