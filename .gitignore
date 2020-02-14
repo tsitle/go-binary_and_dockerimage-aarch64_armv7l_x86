@@ -10,6 +10,8 @@ cross-build/dist/
 nbproject/
 # IntelliJ IDEA:
 .idea/
+# Visual Studio Code:
+.vscode/
 
 # =========================
 # Operating System Files
