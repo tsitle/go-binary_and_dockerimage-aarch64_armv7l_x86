@@ -118,11 +118,13 @@ LVAR_IMAGE_VER="1.13.5"
 
 cd build-ctx || exit 1
 
+LVAR_SRC_OS_IMAGE="tsle/os-debian-${LVAR_DEBIAN_RELEASE}-${LVAR_DEBIAN_DIST}:${LVAR_DEBIAN_VERSION}"
+docker pull $LVAR_SRC_OS_IMAGE || exit 1
+echo
+
 echo -e "\n$VAR_MYNAME: Building Docker Image '${LVAR_IMAGE_NAME}:${LVAR_IMAGE_VER}'...\n"
 docker build \
-		--build-arg CF_CPUARCH_DEB_DIST="$LVAR_DEBIAN_DIST" \
-		--build-arg CF_DEBIAN_RELEASE="$LVAR_DEBIAN_RELEASE" \
-		--build-arg CF_DEBIAN_VERSION="$LVAR_DEBIAN_VERSION" \
+		--build-arg CF_SRC_OS_IMAGE="$LVAR_SRC_OS_IMAGE" \
 		--build-arg CF_CPUARCH_DEB_TRG_DIST="$OPT_DEBIAN_TRG_DIST" \
 		--build-arg CF_GOLANG_VER="$LVAR_IMAGE_VER" \
 		--build-arg CF_GOLANG_TRG_ARCH="$LVAR_GOLANG_TRG_ARCH" \
