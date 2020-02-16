@@ -4,7 +4,6 @@
 **/README.md
 
 
-
 # =========================
 # IDE Files
 # =========================
@@ -13,6 +12,8 @@
 **/nbproject/
 # IntelliJ IDEA:
 **/.idea/
+# Visual Studio Code:
+**/.vscode/
 
 # =========================
 # Operating System Files
